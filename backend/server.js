@@ -5,7 +5,7 @@ const URL = process.env.URL;
 mongoose.connect(URL, {useNewUrlPrser: true}, (err)=>{
     if(!err){console.log("Conectado a Mongo")}
 });
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 const request = require("request")
 const express = require("express");
 const bodyparser = require("body-parser");
